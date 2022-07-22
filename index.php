@@ -1,12 +1,22 @@
 <?php
 $n = 10;
 
-function f()
+function f(&$m)
 {
-  global $n;
-  $n++;
+  $m++;
+}
+f($n);
+echo $n;
+
+
+function deleteBook()
+{
+  echo 'DELETE';
+}
+function updateBook()
+{
+  echo 'UPDATE';
 }
 
-f();
-
-echo $n;
+$action = 'updateBook';
+$action();
