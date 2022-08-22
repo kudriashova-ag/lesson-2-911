@@ -1,7 +1,7 @@
 <?php
 require_once './functions.php';
 // include_once './functions.php';
-
+// gfhfghfghfg
 
 // $login = strip_tags( trim($_GET['login'] ?? null) );
 $login = clear($_GET['login'] ?? null);
